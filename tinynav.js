@@ -49,7 +49,7 @@
                 $select.append(options);
 
                 // Select the active item
-                if (!settings.header) {
+                if (!settings.header && settings.active) {
                     $select.find(':eq(' + $(l_namespace_i + ' li')
                         .index($(l_namespace_i + ' li.' + settings.active)) + ')')
                         .attr('selected', true);
